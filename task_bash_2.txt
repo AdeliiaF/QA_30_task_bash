@@ -111,10 +111,10 @@ Termial. HW_2
 	> inner_dir_1/tf_4.txt 
 
  21. Найти путь к файлам у которых есть  “tf” в названии.
-	find . -name '*tf*'
+	find . -type f -name '*tf*'
 
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре.
-	find . -iname '*tf*'
+	find . -type f -iname '*tf*'
 
  23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке
 	grep sec *
@@ -144,7 +144,7 @@ Termial. HW_2
 	grep -v second *
 
  32. Найти только название и путь к файлам где нет комбинации “second”
-	grep -rlv second *
+	grep -rLv second *
 
  33. Вывести в терминал 4 последних строк любого текстового файла
 	tail -4 inner_dir_1/tF_5.txt
@@ -172,3 +172,4 @@ Termial. HW_2
 
  40. Просто вывести в терминал строку “Good job!!”
 	echo 'Good job!!'
+
